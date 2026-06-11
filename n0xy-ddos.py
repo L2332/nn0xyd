@@ -842,7 +842,7 @@ class Layer7Engine:
 # MAIN
 # -----------------------------------------------------------
 def main():
-    if len(sys.argv) < 4:
+    if len(sys.argv) < 2:
         print("""
 ╔══════════════════════════════════════════════════════════════════╗
 ║                            N0XY-DDoS                             ║
@@ -861,4 +861,5 @@ COMMANDS:
     pipeline <target> <threads> <dur>   - HTTP pipelining flood
     cachebypass <target> <threads> <dur>- Cache bypass attack
     vercel <target> <threads> <dur>     - Vercel-specific attack
-    recursive <target> <threads> <dur>  - Recursive
+    recursive <target> <threads> <dur>  - Recursive GET flood
+    all <target> <threads> <duration>   - All attacks combined
